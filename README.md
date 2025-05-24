@@ -1,52 +1,87 @@
-# Learning Management System (LMS)
+# Система управления обучением (LMS)
 
 ![LMS Dashboard](https://github.com/whatDeepak/lms-project/blob/dev-branch-current/public/main.jpg)
 
-Our **Learning Management System (LMS)** redefines online education with a modern and intuitive platform that caters to both instructors and learners. Our LMS offers a seamless experience to help you learn and teach effectively.
-
-## Key Features
-
-### 1. Interactive Dashboard  
-![Interactive Dashboard](https://github.com/whatDeepak/lms-project/blob/dev-branch-current/public/main.jpg)  
-Monitor your progress, enroll in courses, and manage your profile easily through a user-friendly dashboard. Stay on top of your learning journey!
-
-### 2. Course Catalog  
-![Browse Courses](https://github.com/whatDeepak/lms-project/blob/dev-branch-current/public/browse.jpg)  
-Browse through a wide range of courses covering various topics. Find the perfect course to enhance your skills!
-
-### 3. Engaging Content  
-![Quiz](https://github.com/whatDeepak/lms-project/blob/dev-branch-current/public/quiz.jpg)  
-Our LMS offers high-quality video lectures, interactive quizzes, and downloadable resources to keep you engaged throughout the learning process.
-
-### 4. Instructor Tools  
-![Course Creation](https://github.com/whatDeepak/lms-project/blob/dev-branch-current/public/course-creation.jpg)  
-Instructors can effortlessly create, manage, and deliver courses. Engage with students through discussions and keep track of course performance with powerful analytics tools.
-
-### 5. Analytics Dashboard  
-![Course Analytics](https://github.com/whatDeepak/lms-project/blob/dev-branch-current/public/analytics.jpg)  
-Track course enrollments, student activity, and quiz results with real-time analytics. Identify trends and optimize your teaching strategies.
-
-### 6. Video Learning  
-![Course Video](https://github.com/whatDeepak/lms-project/blob/dev-branch-current/public/course-vid.jpg)  
-Enjoy high-quality video content with seamless streaming. Learning through videos has never been easier or more accessible.
+Наша **Система управления обучением (LMS)** — это современная и интуитивно понятная платформа для онлайн-образования, подходящая как для преподавателей, так и для студентов. LMS обеспечивает удобный и эффективный процесс обучения и преподавания.
 
 ---
 
-## Contribution
+## Установка
 
-This project is actively developed and maintained by:
+1. **Клонируйте репозиторий:**
+   ```sh
+   git clone https://github.com/ElPsy77/TIMA.git
+   cd TIMA
+   ```
+
+2. **Установите зависимости:**
+   ```sh
+   npm install
+   ```
+
+3. **Создайте файл окружения `.env.local` в корне проекта и добавьте туда:**
+   ```
+   AUTH_SECRET=8d33dcf9e480658ea62b8eb068b6fe7f
+    GOOGLE_CLIENT_ID=1081095616674-27mmo4ga3nq242e565cohn46kjgp136e.apps.googleusercontent.com
+    GOOGLE_CLIENT_SECRET=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
+    
+    DATABASE_URL=mongodb+srv://makjikkarimbaev:cgDKzxk0cD96wsAg@cluster0.s7cqsht.mongodb.net/TIMA?retryWrites=true&w=majority
+
+    UPLOADTHING_SECRET=sk_live_1606a47bf788608533db93c7b20dc517e72ef9f4312e8c897b4bf0fb87213970
+   ```
+
+4. **Запустите проект:**
+   ```sh
+   npm run dev
+   ```
+
+5. Откройте [http://localhost:3000](http://localhost:3000) в браузере.
+
+---
+
+## Основные возможности
+
+### 1. Интерактивная панель управления  
+![Интерактивная панель](https://github.com/whatDeepak/lms-project/blob/dev-branch-current/public/main.jpg)  
+Следите за своим прогрессом, записывайтесь на курсы и управляйте профилем через удобную панель.
+
+### 2. Каталог курсов  
+![Каталог курсов](https://github.com/whatDeepak/lms-project/blob/dev-branch-current/public/browse.jpg)  
+Просматривайте широкий выбор курсов по разным темам и находите подходящие для себя.
+
+### 3. Интерактивный контент  
+![Викторина](https://github.com/whatDeepak/lms-project/blob/dev-branch-current/public/quiz.jpg)  
+Высококачественные видеоуроки, интерактивные викторины и материалы для скачивания.
+
+### 4. Инструменты для преподавателей  
+![Создание курса](https://github.com/whatDeepak/lms-project/blob/dev-branch-current/public/course-creation.jpg)  
+Создавайте и управляйте курсами, общайтесь со студентами и анализируйте эффективность обучения.
+
+### 5. Аналитика  
+![Аналитика курса](https://github.com/whatDeepak/lms-project/blob/dev-branch-current/public/analytics.jpg)  
+Отслеживайте записи на курсы, активность студентов и результаты тестов в реальном времени.
+
+### 6. Видеообучение  
+![Видео курса](https://github.com/whatDeepak/lms-project/blob/dev-branch-current/public/course-vid.jpg)  
+Смотрите видеоуроки в высоком качестве с удобным просмотром.
+
+---
+
+## Вклад
+
+Проект активно развивается и поддерживается:
 
 - **Deepak Kumar** 
 - **Gautam Sodhi**
 
-We welcome contributions from the community! Feel free to open issues or submit pull requests.
+Мы приветствуем вклад сообщества! Открывайте issues или отправляйте pull requests.
 
 ---
 
-## License
+## Лицензия
 
-This project is licensed under the **No Permission License**.  
-All rights are reserved. Unauthorized use, copying, modification, and distribution of this code are strictly prohibited.
+Проект распространяется по лицензии **No Permission License**.  
+Все права защищены. Несанкционированное использование, копирование, модификация и распространение кода запрещены.
 
 ---
 
