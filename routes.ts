@@ -1,6 +1,6 @@
 /**
- * An array of routes that are accessible to the public
- * These routes do not require authentication
+ * Массив маршрутов, доступных для всех
+ * Эти маршруты не требуют аутентификации
  * @type {string[]}
  */
 export const publicRoutes = [
@@ -11,8 +11,8 @@ export const publicRoutes = [
 ];
 
 /**
- * An array of routes that are used for authentication
- * These routes will redirect logged in users to /settings
+ * Массив маршрутов, используемых для аутентификации
+ * Эти маршруты перенаправляют авторизованных пользователей на /settings
  * @type {string[]}
  */
 export const authRoutes = [
@@ -24,14 +24,14 @@ export const authRoutes = [
 ];
 
 /**
- * The prefix for API authentication routes
- * Routes that start with this prefix are used for API authentication purposes
+ * Префикс для маршрутов API аутентификации
+ * Маршруты, начинающиеся с этого префикса, используются для целей аутентификации через API
  * @type {string}
  */
 export const apiAuthPrefix = "/api/auth";
 
 /**
- * The default redirect path after logging in
+ * Путь перенаправления по умолчанию после входа в систему
  * @type {string}
  */
 export const DEFAULT_LOGIN_REDIRECT = "/dashboard";
