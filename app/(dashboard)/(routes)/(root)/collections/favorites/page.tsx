@@ -43,7 +43,7 @@ const CollectionFavoritePage = () => {
 
 
   if (loading || !favoriteCourses) {
-    return <div>Loading...</div>;
+    return <div>Загрузка...</div>;
   }
   return (
     <>

@@ -11,7 +11,7 @@ export const Topbar = () => {
   const isWatchlistPage = pathname === "/collections/watch-later";
   return (
     <>
-      <h1 className="text-[12px] sm:text-2xl md:text-3xl  text-white font-semibold ">My Collections</h1>
+      <h1 className="text-[12px] sm:text-2xl md:text-3xl  text-white font-semibold ">Мои курсы</h1>
       <div className="flex space-x-3">
         <Link
           href="/collections/favorites"
@@ -22,7 +22,7 @@ export const Topbar = () => {
               : "bg-custom-primary text-white"
           )}
         >
-          Favorites
+          Избранное
         </Link>
         <Link
           href="/collections/watch-later"
@@ -33,7 +33,7 @@ export const Topbar = () => {
               : "bg-custom-primary text-white"
           )}
         >
-          Watchlist
+          Список отслеживаемое
         </Link>
       </div>
     </>

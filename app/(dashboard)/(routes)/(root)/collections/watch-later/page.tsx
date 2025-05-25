@@ -40,7 +40,7 @@ const CollectionWatchListPage = () => {
 
 
   if (loading || !watchlistCourses) {
-    return <div>Loading...</div>;
+    return <div>Загрузка...</div>;
   }
   return (
     <>
