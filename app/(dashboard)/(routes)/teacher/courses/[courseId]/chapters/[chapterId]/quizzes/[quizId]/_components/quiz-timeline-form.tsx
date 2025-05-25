@@ -65,7 +65,7 @@ export const QuizTimelineForm = ({
       await axios.patch(`/api/courses/${courseId}/chapters/${chapterId}/quizzes/${quizId}`, {
         timeline: convertHHMMSSToSeconds(values.timeline),
       });
-      toast.success("Quiz timeline updated");
+      toast.success("Обновлено время Quiz'а");
       toggleEdit();
       router.refresh();
     } catch (error) {
@@ -80,7 +80,7 @@ export const QuizTimelineForm = ({
         Время Quiz
         <Button onClick={toggleEdit} variant="ghost">
           {isEditing ? (
-            <>Cancel</>
+            <>Отмена</>
           ) : (
             <>
               <Pencil className="h-4 w-4 mr-2" />

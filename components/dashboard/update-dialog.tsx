@@ -59,15 +59,15 @@ export const UpdateDialog: React.FC<UpdateDialogProps> = ({ onClose, userId }) =
             <Dialog open={open} onOpenChange={setOpen}>
                 <DialogContent className="sm:max-w-[450px]">
                     <DialogHeader>
-                        <DialogTitle>Complete your Profile</DialogTitle>
+                        <DialogTitle>Заполните свой профиль</DialogTitle>
                         <DialogDescription>
-                            Enter details to complete your profile. Click save when you&apos;re done.
+                            Введите данные для заполнения профиля. Нажмите кнопку сохранить, когда закончите.
                         </DialogDescription>
                     </DialogHeader>
                     <div className="grid gap-4 py-4">
                         <div className="grid grid-cols-4 items-center gap-4">
                             <Label htmlFor="rollno" className="text-right">
-                                Roll Number
+                                ИИН:
                             </Label>
                             <Input
                                 id="rollno"
@@ -79,7 +79,7 @@ export const UpdateDialog: React.FC<UpdateDialogProps> = ({ onClose, userId }) =
                     </div>
                     <DialogFooter>
                         <Button onClick={handleClose} type="button">
-                            Save changes
+                            Сохранить изменения
                         </Button>
                     </DialogFooter>
                 </DialogContent>

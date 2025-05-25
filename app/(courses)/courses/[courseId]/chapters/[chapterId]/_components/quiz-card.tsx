@@ -124,7 +124,7 @@ const QuizCard = ({ questions, onQuizComplete, quizId, quizTimeline }: QuizCardP
             <input
               type="text"
               className={`border border-gray-300 rounded-md p-2 w-full text-black ${isSubmitted && checkAnswer(question, selectedAnswer || '') ? 'border-green-500' : 'border-red-500'}`}
-              placeholder="Enter your answer"
+              placeholder="Введите ваш ответ"
               value={selectedAnswer || ''}
               onChange={(e) => setSelectedAnswer(e.target.value)}
               disabled={isSubmitted}
@@ -164,17 +164,17 @@ const QuizCard = ({ questions, onQuizComplete, quizId, quizTimeline }: QuizCardP
               className="mt-4 w-full"
               disabled={!selectedAnswer} // Disable button until answer is selected
             >
-              Submit
+              Отправить
             </Button>
           )}
         </>
       )}
       {quizDone && (
         <div className="flex flex-col items-center">
-          <h2 className="text-3xl text-black font-bold mb-4">Quiz Result</h2>
-          <p className="text-2xl text-black mt-4">{percentageScore.toFixed(2)}% Correct!</p>
+          <h2 className="text-3xl text-black font-bold mb-4">Результат Quiz'а </h2>
+          <p className="text-2xl text-black mt-4">{percentageScore.toFixed(2)}% Верно!</p>
           <Link href="#" onClick={() => onQuizComplete(quizTimeline)} className="mt-8">
-            <Button variant="default">Back to Video</Button>
+            <Button variant="default">Назад к видео</Button>
           </Link>
         </div>
       )}
