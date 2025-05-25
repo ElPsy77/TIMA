@@ -1,15 +1,18 @@
 "use client";
 
 import { Category } from "@prisma/client";
-import { GiChemicalDrop } from "react-icons/gi";
-import { IoIosConstruct } from "react-icons/io";
-import { FaIndustry, FaLaptop } from "react-icons/fa";
-import { AiOutlineControl } from "react-icons/ai";
-import { GiGears, GiSewingString } from "react-icons/gi";
-import { MdBiotech, MdElectricBolt } from "react-icons/md";
-import { IoHardwareChip, IoGrid } from "react-icons/io5";
-import { PiCircuitryFill } from "react-icons/pi";
 
+
+import { IoHardwareChip, IoGrid } from "react-icons/io5";
+
+
+import { FaVirusCovid } from "react-icons/fa6";
+import { FaPeopleArrows } from "react-icons/fa";
+import { GiDread } from "react-icons/gi";
+import { WiSmoke } from "react-icons/wi";
+import { GiLetterBomb } from "react-icons/gi";
+import { GiPistolGun } from "react-icons/gi";
+import { GiChemicalDrop } from "react-icons/gi";
 import { GiGasMask } from "react-icons/gi";
 import { ImPower } from "react-icons/im";
 import { RiEarthquakeFill } from "react-icons/ri";
@@ -28,13 +31,13 @@ const iconMap: Record<string, IconType> = {
   "Землетрясение": RiEarthquakeFill,
   "Авария на системах электроснабжения": ImPower,
   "Утечка газа": GiGasMask,
-  "Химическое заражение": PiCircuitryFill,
-  "Электротехника": MdElectricBolt,
-  "Промышленный и Производственный инженерия": FaIndustry,
-  "Информационные Технологии": FaLaptop,
-  "Приборостроение и Контрольная техника": AiOutlineControl,
-  "Машиностроение": GiGears,
-  "Текстильные технологии": GiSewingString,
+  "Химическое заражение": GiChemicalDrop,
+  "Угроза вооруженного нападения": GiPistolGun,
+  "Анонимные сообщения о минировании": GiLetterBomb,
+  "Задымление в помещении": WiSmoke,
+  "Паника при ЧС": GiDread,
+  "Конфликтные ситуации между обучающимися": FaPeopleArrows,
+  "Вспышка инфекционного заболевания": FaVirusCovid ,
 };
 
 export const Categories = ({
