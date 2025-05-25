@@ -104,14 +104,14 @@ export const ChapterQuizForm = ({
         </div>
       )}
       <div className="font-medium flex items-center justify-between">
-        Chapter quizzes
+        Разделы quiz'а
         <Button onClick={toggleCreating} variant="ghost">
           {isCreating ? (
-            <>Cancel</>
+            <>Отмена</>
           ) : (
             <>
               <PlusCircle className="h-4 w-4 mr-2" />
-              Add a quiz
+              Добавить quiz
             </>
           )}
         </Button>
@@ -125,7 +125,7 @@ export const ChapterQuizForm = ({
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Input disabled={isSubmitting} placeholder="e.g. 'Quiz 1'" {...field} />
+                    <Input disabled={isSubmitting} placeholder="Например 'Вопрос 1'" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -139,7 +139,7 @@ export const ChapterQuizForm = ({
                   <FormControl>
                     <Input
                       disabled={isSubmitting}
-                      placeholder="Enter timeline (hh:mm:ss)"
+                      placeholder="Введите время (чч:мм:сс)"
                       {...field}
                     />
                   </FormControl>
@@ -148,7 +148,7 @@ export const ChapterQuizForm = ({
               )}
             />
             <Button disabled={!isValid || isSubmitting} type="submit">
-              Create
+              Создать
             </Button>
           </form>
         </Form>
@@ -162,7 +162,7 @@ export const ChapterQuizForm = ({
           )}
         >
           {!initialData.quizzes || initialData.quizzes.length === 0 ? (
-            "No quizzes"
+            "Нет вопросов"
           ) : (
             <ChapterQuizList
               onEdit={onEdit}
@@ -174,7 +174,7 @@ export const ChapterQuizForm = ({
       )}
       {!isCreating && (
         <p className="text-xs text-muted-foreground mt-4">
-          Drag and drop to reorder the quizzes
+          Перетаскивание для изменения порядка расположения вопросов
         </p>
       )}
     </div>

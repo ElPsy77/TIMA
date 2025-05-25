@@ -24,7 +24,7 @@ export const columns: ColumnDef<Course>[] = [
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Title
+          Название
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       )
@@ -39,7 +39,7 @@ export const columns: ColumnDef<Course>[] = [
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="ghost" className="h-4 w-8 p-0">
-              <span className="sr-only">Open menu</span>
+              <span className="sr-only">Открыть меню</span>
               <MoreHorizontal className="h-4 w-4" />
             </Button>
           </DropdownMenuTrigger>
@@ -47,7 +47,7 @@ export const columns: ColumnDef<Course>[] = [
             <Link href={`/teacher/announcements/${id}`}>
               <DropdownMenuItem>
                 <EyeIcon className="h-4 w-4 mr-2" />
-                Make Announcement
+                Сделать объявление
               </DropdownMenuItem>
             </Link>
           </DropdownMenuContent>

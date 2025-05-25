@@ -115,7 +115,7 @@ const Dashboard = () => {
           </div>
           {chartData.data.length === 0 || chartData.labels.length === 0 ? (
             <div className="border border-gray-400 pt-0 rounded-xl my-auto h-[300px] flex items-center justify-center">
-              <p>No data available</p>
+              <p>Нет данных</p>
             </div>
           ) : (
             <DoughnutChart labels={chartData.labels} data={chartData.data} />

@@ -36,7 +36,7 @@ export const QuizActions = ({
         toast.success("Quiz unpublished");
       } else {
         await axios.patch(`/api/courses/${courseId}/chapters/${chapterId}/quizzes/${quizId}/publish`);
-        toast.success("Quiz published");
+        toast.success("Quiz опубликован");
       }
 
       router.refresh();
@@ -53,7 +53,7 @@ export const QuizActions = ({
 
       await axios.delete(`/api/courses/${courseId}/chapters/${chapterId}/quizzes/${quizId}`);
 
-      toast.success("Quiz deleted");
+      toast.success("Quiz удалён");
       router.refresh();
       router.push(`/teacher/courses/${courseId}/chapters/${chapterId}`);
       router.refresh();
@@ -67,7 +67,7 @@ export const QuizActions = ({
   return (
     <div className="flex items-center gap-x-2">
       <Button onClick={onClick} disabled={disabled || isLoading} variant="outline" size="sm">
-        {isPublished ? "Unpublish" : "Publish"}
+        {isPublished ? "Отменить публикацию" : "Опубликовать"}
       </Button>
       <ConfirmModal onConfirm={onDelete}>
         <Button size="sm" disabled={isLoading}>

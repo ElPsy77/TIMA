@@ -13,27 +13,27 @@ export const Topbar = () => {
   return (
     <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
       <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-        <div className="flex items-center gap-2 text-lg font-semibold md:text-base">
+        <div className="transition-colors text-muted-foreground hover:text-foreground.">
           <Package2 className="h-6 w-6" />
         </div>
         <Link 
           href="/teacher/analytics" 
           className={`transition-colors ${pathname === '/teacher/analytics' ? 'text-foreground font-semibold' : 'text-muted-foreground hover:text-foreground'}`}
         >
-          Dashboard
+          Панель
         </Link>
         <Link 
           href="/teacher/analytics/courses" 
           className={`transition-colors ${pathname === '/teacher/analytics/courses' ? 'text-foreground font-semibold' : 'text-muted-foreground hover:text-foreground'}`}
         >
-          Courses
+          Курсы
         </Link>
       </nav>
       <Sheet>
         <SheetTrigger asChild>
           <Button variant="outline" size="icon" className="shrink-0 md:hidden">
             <Menu className="h-5 w-5" />
-            <span className="sr-only">Toggle navigation menu</span>
+            <span className="sr-only">Переключатель навигации</span>
           </Button>
         </SheetTrigger>
         <SheetContent side="left">
@@ -45,13 +45,13 @@ export const Topbar = () => {
               href="/teacher/analytics" 
               className={`transition-colors ${pathname === '/teacher/analytics' ? 'text-foreground font-semibold' : 'hover:text-foreground'}`}
             >
-              Dashboard
+              Панель
             </Link>
             <Link 
               href="/teacher/analytics/courses" 
               className={`transition-colors ${pathname === '/teacher/analytics/courses' ? 'text-foreground font-semibold' : 'text-muted-foreground hover:text-foreground'}`}
             >
-              Courses
+              Курсы
             </Link>
           </nav>
         </SheetContent>

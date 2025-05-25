@@ -89,7 +89,7 @@ export const QuizQuestionsForm = ({
                 `/api/courses/${courseId}/chapters/${chapterId}/quizzes/${quizId}/questions`,
                 values
             );
-            toast.success("Quiz questions updated");
+            toast.success("Вопросы Quiz'а обновлены");
             toggleEditing();
             router.refresh();
         } catch {
@@ -105,16 +105,16 @@ export const QuizQuestionsForm = ({
     return (
         <div className="mt-6 border bg-slate-100 rounded-md p-4">
             <div className="font-medium flex items-center justify-between">
-                Quiz Questions
+                Вопросы Quiz'a
 
                 {!isEditing ? (
                     <Button variant="ghost" onClick={toggleEditing}>
                         <Pencil className="h-4 w-4 mr-2" />
-                        Edit questions
+                        Редактировать вопросы
                     </Button>
                 ) : (
                     <Button variant="ghost" onClick={onCancel}>
-                        Cancel
+                        Отмена
                     </Button>
                 )}
             </div>
@@ -131,7 +131,7 @@ export const QuizQuestionsForm = ({
                                             <FormControl>
                                                 <Input
                                                     disabled={isSubmitting}
-                                                    placeholder="Question"
+                                                    placeholder="Вопрос"
                                                     {...field}
                                                 />
                                             </FormControl>
@@ -161,10 +161,10 @@ export const QuizQuestionsForm = ({
                                                         <SelectGroup>
                                                             <SelectLabel>Type</SelectLabel>
                                                             <SelectItem value={QuestionType.NORMAL}>
-                                                                Normal
+                                                                Нормальный
                                                             </SelectItem>
                                                             <SelectItem value={QuestionType.MCQ}>
-                                                                Multiple Choice
+                                                                Несколько вариантов
                                                             </SelectItem>
                                                         </SelectGroup>
                                                     </SelectContent>

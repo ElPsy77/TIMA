@@ -32,17 +32,17 @@ const guestRoutes = [
 const teacherRoutes = [
   {
     icon: List,
-    label: "Courses",
+    label: "Курсы",
     href: "/teacher/courses",
   },
   {
     icon: BarChart,
-    label: "Analytics",
+    label: "Аналитика",
     href: "/teacher/analytics",
   },
   {
     icon: Bell,
-    label: "Announcements",
+    label: "Объявления",
     href: "/teacher/announcements", 
   }
 ]

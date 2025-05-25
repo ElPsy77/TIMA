@@ -24,7 +24,7 @@ export const columns: ColumnDef<Course>[] = [
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Title
+          Название
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       )
@@ -38,7 +38,7 @@ export const columns: ColumnDef<Course>[] = [
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Published
+          Опубликовано
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       )
@@ -51,7 +51,7 @@ export const columns: ColumnDef<Course>[] = [
           "bg-slate-500",
           isPublished && "bg-sky-700"
         )}>
-          {isPublished ? "Published" : "Draft"}
+          {isPublished ? "Опубликовано" : "Проект"}
         </Badge>
       )
     }
@@ -73,7 +73,7 @@ export const columns: ColumnDef<Course>[] = [
             <Link href={`/teacher/analytics/courses/${id}`}>
               <DropdownMenuItem>
                 <EyeIcon className="h-4 w-4 mr-2" />
-                View Analytics
+                Просмотреть аналитику
               </DropdownMenuItem>
             </Link>
           </DropdownMenuContent>

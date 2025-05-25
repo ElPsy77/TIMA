@@ -55,7 +55,7 @@ const QuizIdPage = async ({
       {!quiz.isPublished && (
         <Banner
           variant="warning"
-          label="This quiz is unpublished. It will not be visible in the course"
+          label="Эта викторина не опубликована. Она не будет видна в курсе"
         />
       )}
       <div className="p-6">
@@ -66,15 +66,15 @@ const QuizIdPage = async ({
               className="flex items-center text-sm hover:opacity-75 transition mb-6"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
-              Back to chapter setup
+              Вернуться к настройке главы
             </Link>
             <div className="flex items-center justify-between w-full">
               <div className="flex flex-col gap-y-2">
                 <h1 className="text-2xl font-medium">
-                  Quiz Editing
+                  Редактирование Quiz'а
                 </h1>
                 <span className="text-sm text-slate-700">
-                  Complete all fields {completionText}
+                  Заполните все поля {completionText}
                 </span>
               </div>
               <QuizActions
@@ -93,7 +93,7 @@ const QuizIdPage = async ({
               <div className="flex items-center gap-x-2">
                 <IconBadge icon={LayoutDashboard} />
                 <h2 className="text-xl">
-                  Customize your quiz
+                  Настройте свой Quiz
                 </h2>
               </div>
               <QuizTitleForm
@@ -114,7 +114,7 @@ const QuizIdPage = async ({
             <div className="flex items-center gap-x-2">
               <IconBadge icon={CircleHelp} />
               <h2 className="text-xl">
-                Add Questions
+                Добавить вопросы
               </h2>
             </div>
             <QuizQuestionsForm

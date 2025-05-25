@@ -77,14 +77,14 @@ export const QuizTimelineForm = ({
   return (
     <div className="mt-6 border bg-slate-100 rounded-md p-4">
       <div className="font-medium flex items-center justify-between">
-        Quiz timeline
+        Время Quiz
         <Button onClick={toggleEdit} variant="ghost">
           {isEditing ? (
             <>Cancel</>
           ) : (
             <>
               <Pencil className="h-4 w-4 mr-2" />
-              Edit timeline
+              Изменить время
             </>
           )}
         </Button>
@@ -109,7 +109,7 @@ export const QuizTimelineForm = ({
             />
             <div className="flex items-center gap-x-2">
               <Button disabled={!isValid || isSubmitting} type="submit">
-                Save
+                Сохранить
               </Button>
             </div>
           </form>
