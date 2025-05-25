@@ -58,7 +58,7 @@ export const CourseCard = ({
       .writeText(link)
       .then(() => {})
       .catch((err) => {
-        toast.error("Failed to copy email.");
+        toast.error("Не удалось скопировать email.");
       });
   };
 
@@ -68,7 +68,7 @@ export const CourseCard = ({
         const response = await axios.get(`/api/user/watch-later/${id}`);
         setIsInWatchLater(response.data.inWatchLater);
       } catch (error) {
-        console.error("Error checking Watch Later status:", error);
+        console.error("Ошибка при проверке статуса Смотреть позже:", error);
       }
     };
 
@@ -77,7 +77,7 @@ export const CourseCard = ({
         const response = await axios.get(`/api/user/favorite/${id}`);
         setIsFavorite(response.data.isFavorite);
       } catch (error) {
-        console.error("Error checking Favorite status:", error);
+        console.error("Проверка ошибок Статус избранного:", error);
       }
     };
 
@@ -93,17 +93,17 @@ export const CourseCard = ({
         // Remove from Watch Later
         await axios.delete(`/api/user/watch-later/${id}`);
         setIsInWatchLater(false);
-        toast.success("Removed from Watch Later");
+        toast.success("Удалено из Смотреть позже");
       } else {
         // Add to Watch Later
         await axios.post(`/api/user/watch-later/${id}`);
         setIsInWatchLater(true);
-        toast.success("Added to Watch Later");
+        toast.success("Добавлено в Смотреть позже");
       }
     } catch (error: any) {
       if (error.response && error.response.status === 409) {
-        toast.error("Already exists in watch-later");
-      } else toast.error("Failed to toggle Watch Later");
+        toast.error("Уже существует в watch-later");
+      } else toast.error("Не удалось переключить функцию Смотреть позже");
     } finally {
       //setIsAddingToWatchLater(false); // Reset loading state
     }
@@ -114,17 +114,17 @@ export const CourseCard = ({
       if (isFavorite) {
         await axios.delete(`/api/user/favorite/${id}`);
         setIsFavorite(false);
-        toast.success("Removed from Favorites");
+        toast.success("Удалено из избранного");
       } else {
         await axios.post(`/api/user/favorite/${id}`);
         setIsFavorite(true);
-        toast.success("Added to Favorites");
+        toast.success("Добавлено в избранное");
       }
     } catch (error: any) {
       if (error.response && error.response.status === 409) {
-        toast.error("Already exists in Favorites");
+        toast.error("Уже существует в Избранном");
       } else {
-        toast.error("Something went wrong");
+        toast.error("Что-то пошло не так");
       }
     }
   };
@@ -162,9 +162,9 @@ export const CourseCard = ({
                     </DialogTrigger>
                     <DialogContent className=" sm:max-w-[450px] py-7 ">
                       <DialogHeader>
-                        <DialogTitle>Share this course</DialogTitle>
+                        <DialogTitle>Поделитесь этим курсом</DialogTitle>
                         <DialogDescription>
-                          You can share this course with your friends.
+                          Вы можете поделиться этим курсом с друзьями
                         </DialogDescription>
                       </DialogHeader>
                       <div className="flex w-full  items-center justify-between space-x-2">
@@ -174,7 +174,7 @@ export const CourseCard = ({
                           className="border border-gray-300 rounded-md px-3 py-2 overflow-x-scroll whitespace-nowrap"
                         />
                         <Button type="button" onClick={handleCopy}>
-                          Copy
+                          Копировать
                         </Button>
                       </div>
                     </DialogContent>
@@ -219,7 +219,7 @@ export const CourseCard = ({
         ) : (
           <Link href={`/courses/${id}`}>
           <div>
-            <Badge variant="new">Enroll in course</Badge>
+            <Badge variant="new">Записаться на курс</Badge>
           </div>
           </Link>
         )}
