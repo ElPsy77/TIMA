@@ -19,17 +19,17 @@ interface CategoriesProps {
 
 const iconMap: Record<string, IconType> = {
   "Все": IoGrid,
-  "Биотехнологии": MdBiotech,
-  "Химическая Инженерия": GiChemicalDrop,
-  "Гражданское Строительство": IoIosConstruct,
-  "Компьютерные науки и Инженерия": IoHardwareChip,
-  "Электроника и Коммуникационная инженерия": PiCircuitryFill,
-  "Электротехника": MdElectricBolt,
-  "Промышленный и Производственный инженерия": FaIndustry,
-  "Информационные Технологии": FaLaptop,
-  "Приборостроение и Контрольная техника": AiOutlineControl,
-  "Машиностроение": GiGears,
-  "Текстильные технологии": GiSewingString,
+  "Пожар": MdBiotech,
+  "Землетрясение": GiChemicalDrop,
+  "Авария на системах электроснабжения": IoIosConstruct,
+  "Утечка газа": IoHardwareChip,
+  "Химическое заражение": PiCircuitryFill,
+  "Угроза вооруженного нападения": MdElectricBolt,
+  "Анонимные сообщения о минировании": FaIndustry,
+  "Задымление в помещении": FaLaptop,
+  "Паника при ЧС": AiOutlineControl,
+  "Конфликтные ситуации между обучающимися": GiGears,
+  "Вспышка инфекционного заболевания": GiSewingString,
 };
 
 export const Categories = ({
