@@ -66,7 +66,7 @@ const ChapterIdPage = async ({
     <div>
       <div>
         {userProgress?.isCompleted && (
-          <Banner variant="success" label="You already completed this chapter." />
+          <Banner variant="success" label="Вы уже закончили этот раздел." />
         )}
         {isLocked && (
           <Banner
@@ -111,7 +111,7 @@ const ChapterIdPage = async ({
       </div>
       <div className="hidden lg:block fixed right-0 top-[80px] bottom-0 w-64 pt-4 space-y-4 md:w-72 bg-white shadow-lg">
         <div className="flex flex-col">
-          <h2 className="text-lg font-medium ml-4 pb-4">Attachments</h2>
+          <h2 className="text-lg font-medium ml-4 pb-4">Вложения</h2>
           {!!attachments.length && (
             <>
               {attachments.map((attachment) => (

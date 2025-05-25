@@ -43,7 +43,7 @@ export const CourseSidebar = async ({
         {purchased && (
         <div className="mt-4">
           <p>
-           Completed Chapters {completionText}
+           Выполнено разделов {completionText}
           </p>
           <div className="py-4">
             <CourseProgress

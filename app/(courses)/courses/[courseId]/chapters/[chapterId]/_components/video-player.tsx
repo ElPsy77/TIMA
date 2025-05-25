@@ -70,7 +70,7 @@ export const VideoPlayer = ({
           confetti.onOpen();
         }
 
-        toast.success("Progress updated");
+        toast.success("Прогресс обновлен");
         router.refresh();
 
         if (nextChapterId) {
