@@ -41,7 +41,7 @@ export const CourseEnrollButton = ({
       size="sm"
       className="w-full md:w-auto"
     >
-      Enroll in the course
+      Записаться на курс
     </Button>
   );
 };
