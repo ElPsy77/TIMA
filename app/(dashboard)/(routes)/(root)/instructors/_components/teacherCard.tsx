@@ -79,7 +79,7 @@ const TeacherCard: React.FC<TeacherCardProps> = ({
                 </div>
                 <div className="text-input-border pl-3 sm:pl-4 ">
                   <p className="font-semibold text-sm sm:text-lg">{StudentCount}+</p>
-                  <p className="text-xs font-normal -mt-1">Happy Students</p>
+                  <p className="text-xs font-normal -mt-1">Счастливые студенты</p>
                 </div>
               </div>
             )}
@@ -87,7 +87,7 @@ const TeacherCard: React.FC<TeacherCardProps> = ({
               <p className="font-medium text-xs sm:text-lg    m-0 ">{name}</p>
               <Link href={hrf}>
                 <Button variant="outline" className="rounded-full w-28 sm:w-full text-[10px] sm:text-xs px-2 h-7 sm:h-9 sm:px-4 sm:py-2">
-                  Explore Courses{" "}
+                   Изучите курсы{" "}
                   <ArrowRight className="font-extralight pl-1  w-4 h-3 sm:h-4  sm:w-6" />{" "}
                 </Button>
               </Link>

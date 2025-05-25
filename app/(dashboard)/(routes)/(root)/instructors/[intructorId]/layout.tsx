@@ -40,6 +40,8 @@ const InstructorIDPageLayout = ({
     }
   }, [instructorId]);
 
+  console.log("Instructor Image:", instructor?.image);
+
   return (
     <>
       <div className="w-full flex items-center justify-between px-6 bg-custom-primary h-16 sm:h-24">
@@ -50,7 +52,7 @@ const InstructorIDPageLayout = ({
           
           <div className="flex items-center space-x-2">
             <Image
-              src={instructor?.image!}
+              src={instructor?.image || "/Preview.png"} // Используйте изображение-заглушку
               height={50}
               width={50}
               alt="Instructor photo"

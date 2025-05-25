@@ -41,7 +41,7 @@ debouncedValue
       onChange={(e) => setValue(e.target.value)}
       value={value}
       className=" w-[170px] md:w-[300px] pl-9 rounded-full text-xs sm:text-sm bg-slate-100 focus-visible:ring-slate-200"
-      placeholder="Search for Instructor"
+      placeholder="Поиск по преподавателям"
     />
   </div>
   )

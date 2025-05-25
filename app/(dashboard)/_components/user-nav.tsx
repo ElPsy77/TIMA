@@ -49,13 +49,13 @@ export function UserNav() {
         <DropdownMenuGroup>
           <Link href="/dashboard">
           <DropdownMenuItem className="flex justify-between">
-            Profile
+            Профиль
             <CiUser />
           </DropdownMenuItem>
           </Link>
           <Link href="/settings">
           <DropdownMenuItem className="flex justify-between">
-            Settings
+            Настройки
             <CiSettings />
           </DropdownMenuItem>
           </Link>
@@ -64,7 +64,7 @@ export function UserNav() {
         <DropdownMenuItem>
         <LogoutButton >
           <div className="flex justify-end items-center ">
-          <DropdownMenuItem>Logout
+          <DropdownMenuItem>Выйти
           </DropdownMenuItem>
             <ExitIcon className="" />
           </div>

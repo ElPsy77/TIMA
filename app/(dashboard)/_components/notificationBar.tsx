@@ -61,10 +61,10 @@ const NotificationBar:React.FC<notificationBarProps> = (
     setmarkingRead(true);
       try {
         await axios.patch(`/api/user/notifications`);
-        toast.success("Successully, Marked All as Read")
+        toast.success("Успешно, пометил все как прочитанные")
       } catch (error) {
-        toast.error("Failed to mark notification as read");
-        console.error("Failed to mark notification as read:", error);
+        toast.error("Не удалось пометить уведомление как прочитанное");
+        console.error("Не удалось пометить уведомление как прочитанное:", error);
       }
       finally{
 
@@ -82,7 +82,7 @@ const NotificationBar:React.FC<notificationBarProps> = (
         align="start" // Align to the start (left) of the trigger
         alignOffset={-500} // Adjust horizontal offset
        >
-        <DropdownMenuLabel>Notifications</DropdownMenuLabel>
+        <DropdownMenuLabel>Уведомление</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           
@@ -115,7 +115,7 @@ const NotificationBar:React.FC<notificationBarProps> = (
         <DropdownMenuSeparator />
         <DropdownMenuGroup className='flex items-center justify-start'>
             <Button size="sm" className='my-[2px] mx-2' onClick={handleMarkAllAsRead}>
-            { markingRead ?  <Loader className="h-4 w-4 text-white animate-spin" /> :  "Mark All as Read"}
+            { markingRead ?  <Loader className="h-4 w-4 text-white animate-spin" /> :  "Прочитать все"}
             </Button>
         </DropdownMenuGroup>
 

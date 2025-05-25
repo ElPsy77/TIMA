@@ -53,7 +53,7 @@ const InstructorPage = () => {
         <div>
           <div className="w-full flex items-center justify-between px-6 bg-custom-primary h-16 sm:h-24">
             <h1 className="text-[16px] sm:text-2xl md:text-3xl  text-white font-semibold ">
-              Instructors
+              Преподаватели
             </h1>
             <SearchInput
               value={value}
@@ -67,7 +67,7 @@ const InstructorPage = () => {
             <TeacherListSkeleton />
           ) : teachers.length === 0 ? (
             <div className="text-center text-sm text-muted-foreground mt-10">
-              No instructors found
+              Преподаватели не найдены
             </div>
           ) : (
             <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
