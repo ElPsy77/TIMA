@@ -78,7 +78,7 @@ const SettingsPage = () => {
     <Card className="w-[600px]">
       <CardHeader>
         <p className="text-2xl font-semibold text-center">
-          ⚙️ Settings
+          ⚙️ Настройки
         </p>
       </CardHeader>
       <CardContent>
@@ -93,7 +93,7 @@ const SettingsPage = () => {
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Name</FormLabel>
+                    <FormLabel>Имя</FormLabel>
                     <FormControl>
                       <Input
                         {...field}
@@ -130,7 +130,7 @@ const SettingsPage = () => {
                     name="password"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Password</FormLabel>
+                        <FormLabel>Пароль</FormLabel>
                         <FormControl>
                           <Input
                             {...field}
@@ -148,7 +148,7 @@ const SettingsPage = () => {
                     name="newPassword"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>New Password</FormLabel>
+                        <FormLabel>Новый пароль</FormLabel>
                         <FormControl>
                           <Input
                             {...field}
@@ -168,7 +168,7 @@ const SettingsPage = () => {
                 name="role"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Role</FormLabel>
+                    <FormLabel>Роль</FormLabel>
                     <Select
                       disabled={isPending}
                       onValueChange={field.onChange}
@@ -181,13 +181,13 @@ const SettingsPage = () => {
                       </FormControl>
                       <SelectContent>
                         <SelectItem value={UserRole.ADMIN}>
-                          Admin
+                          Админ
                         </SelectItem>
                         <SelectItem value={UserRole.TEACHER}>
-                          Teacher
+                          Учитель
                         </SelectItem>
                         <SelectItem value={UserRole.USER}>
-                          User
+                          Пользователь
                         </SelectItem>
                       </SelectContent>
                     </Select>
@@ -202,9 +202,9 @@ const SettingsPage = () => {
                   render={({ field }) => (
                     <FormItem className="flex flex-row items-center justify-between rounded-lg border p-3 shadow-sm">
                       <div className="space-y-0.5">
-                        <FormLabel>Two Factor Authentication</FormLabel>
+                        <FormLabel>Двухфакторная аутентификация</FormLabel>
                         <FormDescription>
-                          Enable two factor authentication for your account
+                          Включите двухфакторную аутентификацию для вашей учетной записи
                         </FormDescription>
                       </div>
                       <FormControl>
@@ -225,7 +225,7 @@ const SettingsPage = () => {
               disabled={isPending}
               type="submit"
             >
-              Save
+              Сохранить
             </Button>
           </form>
         </Form>

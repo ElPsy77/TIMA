@@ -17,7 +17,7 @@ export const Navbar = () => {
           variant={pathname === "/server" ? "default" : "outline"}
         >
           <Link href="/server">
-            Server
+            Сервер
           </Link>
         </Button>
         <Button 
@@ -25,7 +25,7 @@ export const Navbar = () => {
           variant={pathname === "/client" ? "default" : "outline"}
         >
           <Link href="/client">
-            Client
+            Клиент
           </Link>
         </Button>
         <Button 
@@ -33,7 +33,7 @@ export const Navbar = () => {
           variant={pathname === "/admin" ? "default" : "outline"}
         >
           <Link href="/admin">
-            Admin
+            Админ
           </Link>
         </Button>
         <Button 
@@ -41,7 +41,7 @@ export const Navbar = () => {
           variant={pathname === "/settings" ? "default" : "outline"}
         >
           <Link href="/settings">
-            Settings
+            Настройки
           </Link>
         </Button>
       </div>

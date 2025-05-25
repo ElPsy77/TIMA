@@ -33,7 +33,7 @@ export const UserInfo = ({
         </div>
         <div className="flex flex-row items-center justify-between rounded-lg border p-3 shadow-sm">
           <p className="text-sm font-medium">
-            Name
+            Имя
           </p>
           <p className="truncate text-xs max-w-[180px] font-mono p-1 bg-slate-100 rounded-md">
             {user?.name}
@@ -49,7 +49,7 @@ export const UserInfo = ({
         </div>
         <div className="flex flex-row items-center justify-between rounded-lg border p-3 shadow-sm">
           <p className="text-sm font-medium">
-            Role
+            Роль
           </p>
           <p className="truncate text-xs max-w-[180px] font-mono p-1 bg-slate-100 rounded-md">
             {user?.role}
@@ -58,7 +58,7 @@ export const UserInfo = ({
 
         <div className="flex flex-row items-center justify-between rounded-lg border p-3 shadow-sm">
           <p className="text-sm font-medium">
-            Two Factor Authentication
+            Двухфакторная аутентификация
           </p>
           <Badge 
             variant={user?.isTwoFactorEnabled ? "default" : "destructive"}

@@ -37,7 +37,7 @@ const AdminPage = () => {
     <Card className="w-[600px]">
       <CardHeader>
         <p className="text-2xl font-semibold text-center">
-          🔑 Admin
+          🔑 Админ
         </p>
       </CardHeader>
       <CardContent className="space-y-4">
@@ -51,7 +51,7 @@ const AdminPage = () => {
             Admin-only API Route
           </p>
           <Button onClick={onApiRouteClick}>
-            Click to test
+            Нажмите чтобы протестировать
           </Button>
         </div>
 
@@ -60,7 +60,7 @@ const AdminPage = () => {
             Admin-only Server Action
           </p>
           <Button onClick={onServerActionClick}>
-            Click to test
+            Нажмите чтобы протестировать
           </Button>
         </div>
       </CardContent>

@@ -6,7 +6,7 @@ const ServerPage = async () => {
 
   return ( 
     <UserInfo
-      label="💻 Server component"
+      label="💻 Серверная составляющая"
       user={user}
     />
    );

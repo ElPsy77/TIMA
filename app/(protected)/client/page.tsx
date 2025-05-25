@@ -8,7 +8,9 @@ const ClientPage = () => {
 
   return ( 
     <UserInfo
-      label="📱 Client component"
+      label="📱 Клиентская составляющая
+
+"
       user={user}
     />
    );
