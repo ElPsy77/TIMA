@@ -80,11 +80,11 @@ const Dashboard = () => {
            const response= await axios.post(`/api/user/trackUserActivity`);
            setCheckInDates(response.data.checkInDates);
           if(response.data.message==="First time" && !checkInShown){
-         toast.success("Daily Check-in");
+         toast.success("Ежедневная регистрация");
             setCheckInShown(true);
           }
       } catch (error) {
-          console.error("Error tracking daily check-In progress:", error);
+          console.error("Ежедневная регистрация:", error);
       }
    
     }

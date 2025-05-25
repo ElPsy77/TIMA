@@ -9,24 +9,24 @@ import { FaChalkboardTeacher } from "react-icons/fa";
 const guestRoutes = [
   {
     icon: Layout,
-    label: "Dashboard",
+    label: "Панель",
     href: "/dashboard",
   },
   {
     icon: Compass,
-    label: "Browse",
+    label: "Обзор",
     href: "/browse",
   },
   {
     icon: Heart,
-    label: "Collections",
+    label: "Мои Избранные",
     href: "/collections/favorites",
   },
-  {
-    icon: FaChalkboardTeacher,
-    label: "Instructors",
-    href: "/instructors",
-  },
+  //{ тут раньше был раздел для преподавателей, но он удален временно
+  //  icon: FaChalkboardTeacher,
+  //  label: "Преподаватели",
+  //  href: "/instructors",
+  //},
 ];
 
 const teacherRoutes = [

@@ -32,7 +32,7 @@ function NavBar({userId}: NavBarProps) {
             variant="ghost"
             size="lg"
             className="text-md hover:bg-custom-primary/15"
-            >Sign In</Button>
+            >Войти</Button>
             </Link>}
             
            
@@ -42,7 +42,7 @@ function NavBar({userId}: NavBarProps) {
             size="lg"
             className="text-md"
             >
-               {userId? "Sign Out": "Sign Up"} 
+               {userId? "Sign Out": "Зарегистрироваться"} 
               </Button>
            </Link>
           

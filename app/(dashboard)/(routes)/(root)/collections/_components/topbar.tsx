@@ -33,7 +33,7 @@ export const Topbar = () => {
               : "bg-custom-primary text-white"
           )}
         >
-          Список отслеживаемое
+          Смотреть позже
         </Link>
       </div>
     </>
