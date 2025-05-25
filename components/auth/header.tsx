@@ -21,7 +21,7 @@ export const Header = ({
         "md:text-xl text-3xl font-semibold",
         font.className,
       )}>
-      {type==="signUp"? `Create your Account` : `Welcome Back!` }  
+      {type==="signUp"? `Создайте учетную запись` : `Добро пожаловать обратно!` }  
       </h1>
       <p className="text-muted-foreground text-sm md:text-xs">
         {label}

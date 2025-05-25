@@ -4,7 +4,7 @@ import { CardWrapper } from "@/components/auth/card-wrapper";
 export const LoginForm = () => {
   return (
     <CardWrapper
-      headerLabel="Please log in to your account"
+      headerLabel="Пожалуйста, войдите в свою учетную запись"
       backButtonLabel=""
       backButtonHref=""
       showSocial

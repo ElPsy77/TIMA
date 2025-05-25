@@ -26,7 +26,7 @@ export const Social = ({type}: socialProps) => {
         onClick={() => onClick("google")}
       >
         {/* <FcGoogle className="h-5 w-5" /> */}
-        {type==="signUp"? `Create an Account` : `Log in here` }  
+        {type==="signUp"? `Создать учетную запись` : `Войти` }  
       </Button>
     </div>
   );
