@@ -7,7 +7,7 @@ async function main() {
     await database.category.createMany({
       data: [
         { name: "Пожар" },
-        { name: "Землятрясение" },
+        { name: "Землетрясение" },
         { name: "Авария на системах электроснабжения" },
         { name: "Утечка газа" },
         { name: "Химическое заражение" },

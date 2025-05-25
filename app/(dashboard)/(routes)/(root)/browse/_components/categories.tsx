@@ -10,6 +10,11 @@ import { MdBiotech, MdElectricBolt } from "react-icons/md";
 import { IoHardwareChip, IoGrid } from "react-icons/io5";
 import { PiCircuitryFill } from "react-icons/pi";
 
+import { GiGasMask } from "react-icons/gi";
+import { ImPower } from "react-icons/im";
+import { RiEarthquakeFill } from "react-icons/ri";
+import { FaFireExtinguisher } from "react-icons/fa";
+
 import { IconType } from "react-icons";
 import { CategoryItem } from "./category-item";
 
@@ -19,11 +24,11 @@ interface CategoriesProps {
 
 const iconMap: Record<string, IconType> = {
   "Все": IoGrid,
-  "Биотехнологии": MdBiotech,
-  "Химическая Инженерия": GiChemicalDrop,
-  "Гражданское Строительство": IoIosConstruct,
-  "Компьютерные науки и Инженерия": IoHardwareChip,
-  "Электроника и Коммуникационная инженерия": PiCircuitryFill,
+  "Пожар": FaFireExtinguisher,
+  "Землетрясение": RiEarthquakeFill,
+  "Авария на системах электроснабжения": ImPower,
+  "Утечка газа": GiGasMask,
+  "Химическое заражение": PiCircuitryFill,
   "Электротехника": MdElectricBolt,
   "Промышленный и Производственный инженерия": FaIndustry,
   "Информационные Технологии": FaLaptop,
