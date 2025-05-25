@@ -18,24 +18,24 @@ interface CategoriesProps {
 }
 
 const iconMap: Record<string, IconType> = {
-  "All": IoGrid,
-  "Biotechnology": MdBiotech,
-  "Chemical Engineering": GiChemicalDrop,
-  "Civil Engineering": IoIosConstruct,
-  "Computer Science and Engineering": IoHardwareChip,
-  "Electronics and Communication Engineering": PiCircuitryFill,
-  "Electrical Engineering": MdElectricBolt,
-  "Industrial and Production Engineering": FaIndustry,
-  "Information Technology": FaLaptop,
-  "Instrumentation and Control Engineering": AiOutlineControl,
-  "Mechanical Engineering": GiGears,
-  "Textile Technology": GiSewingString,
+  "Все": IoGrid,
+  "Биотехнологии": MdBiotech,
+  "Химическая Инженерия": GiChemicalDrop,
+  "Гражданское Строительство": IoIosConstruct,
+  "Компьютерные науки и Инженерия": IoHardwareChip,
+  "Электроника и Коммуникационная инженерия": PiCircuitryFill,
+  "Электротехника": MdElectricBolt,
+  "Промышленный и Производственный инженерия": FaIndustry,
+  "Информационные Технологии": FaLaptop,
+  "Приборостроение и Контрольная техника": AiOutlineControl,
+  "Машиностроение": GiGears,
+  "Текстильные технологии": GiSewingString,
 };
 
 export const Categories = ({
   items,
 }: CategoriesProps) => {
-  const allCategory = { id: "all", name: "All" };
+  const allCategory = { id: "all", name: "Все" };
   const categories = [allCategory, ...items];
 
   return (
