@@ -25,7 +25,7 @@ export const NavbarRoutes = () => {
 
   return (
     <>
-      <p className="text-lg md:text-2xl ">Welcome, <span className="text-custom-primary font-medium">{formattedName}</span></p>
+      <p className="text-lg md:text-2xl ">Добро пожаловать, <span className="text-custom-primary font-medium">{formattedName}</span></p>
       <div className="ml-auto flex items-center space-x-4">
       {isSearchPage && (
         <div className="hidden md:block">
@@ -36,13 +36,13 @@ export const NavbarRoutes = () => {
           <Link href="/dashboard">
             <Button size="sm" variant="ghost">
               <LogOut className="h-4 w-4 mr-2" />
-              Exit
+              Выйти
             </Button>
           </Link>
         ) : isTeacher ? (
           <Link href="/teacher/courses">
             <Button size="sm" variant="outline">
-              Teacher mode
+              Учитель мод
             </Button>
           </Link>
         ) : null}

@@ -58,12 +58,12 @@ const DashboardCoursesCard: React.FC<DashboardCoursesCardProps> = ({
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <InfoCard
           icon={Clock}
-          label="In Progress"
+          label="В процессе"
           numberOfItems={coursesInProgress.length}
         />
         <InfoCard
           icon={CheckCircle}
-          label="Completed"
+          label="Завершено"
           numberOfItems={completedCourses.length}
           variant="success"
         />
@@ -72,7 +72,7 @@ const DashboardCoursesCard: React.FC<DashboardCoursesCardProps> = ({
       {/* Section for User Courses */}
       {(coursesInProgress.length > 0 || completedCourses.length > 0) && (
         <div className="mt-4">
-          <h2 className="text-xl font-normal pb-2">Your Courses</h2>
+          <h2 className="text-xl font-normal pb-2">Ваши курсы</h2>
           <CoursesList items={[...coursesInProgress, ...completedCourses]} />
         </div>
       )}
@@ -80,7 +80,7 @@ const DashboardCoursesCard: React.FC<DashboardCoursesCardProps> = ({
       {/* Section for Recommended/Suggested Courses */}
       {additionalCourses.length > 0 && (
         <div className="mt-8">
-          <h2 className="text-xl font-normal pb-2">Recommended Courses</h2>
+          <h2 className="text-xl font-normal pb-2">Рекомендуемые курсы</h2>
           <CoursesList items={additionalCourses} />
         </div>
       )}
@@ -90,7 +90,7 @@ const DashboardCoursesCard: React.FC<DashboardCoursesCardProps> = ({
         completedCourses.length === 0 &&
         additionalCourses.length === 0 && (
           <div className="text-center text-sm text-muted-foreground mt-10">
-            No courses found
+            Курсы не найдены
           </div>
         )}
     </div>
