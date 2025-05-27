@@ -56,7 +56,7 @@ export const TitleForm = ({
       toggleEdit();
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Что-то пошло не так");
     }
   }
 

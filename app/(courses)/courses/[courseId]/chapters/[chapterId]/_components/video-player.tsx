@@ -79,7 +79,7 @@ export const VideoPlayer = ({
       }
     } catch (error) {
       console.error("Failed to update progress:", error);
-      toast.error("Something went wrong");
+      toast.error("Что-то пошло не так");
     }
   };
 

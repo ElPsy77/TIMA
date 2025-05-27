@@ -35,11 +35,11 @@ export const AttachmentForm = ({
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
       await axios.post(`/api/courses/${courseId}/attachments`, values);
-      toast.success("Course updated");
+      toast.success("Курс обновлён");
       toggleEdit();
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Что-то пошло не так");
     }
   };
 
@@ -47,10 +47,10 @@ export const AttachmentForm = ({
     try {
       setDeletingId(id);
       await axios.delete(`/api/courses/${courseId}/attachments/${id}`);
-      toast.success("Attachment deleted");
+      toast.success("Вложение удалено");
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Что-то пошло не так");
     } finally {
       setDeletingId(null);
     }

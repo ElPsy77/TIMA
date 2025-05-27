@@ -40,7 +40,7 @@ export const Actions = ({
 
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Что-то пошло не так");
     } finally {
       setIsLoading(false);
     }
@@ -57,7 +57,7 @@ export const Actions = ({
       router.push(`/teacher/courses`);
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Что-то пошло не так");
     } finally {
       setIsLoading(false);
     }

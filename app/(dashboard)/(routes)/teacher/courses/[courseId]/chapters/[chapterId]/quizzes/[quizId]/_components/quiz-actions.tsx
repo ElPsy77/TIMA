@@ -33,7 +33,7 @@ export const QuizActions = ({
 
       if (isPublished) {
         await axios.patch(`/api/courses/${courseId}/chapters/${chapterId}/quizzes/${quizId}/unpublish`);
-        toast.success("Quiz unpublished");
+        toast.success("Quiz не опубликован");
       } else {
         await axios.patch(`/api/courses/${courseId}/chapters/${chapterId}/quizzes/${quizId}/publish`);
         toast.success("Quiz опубликован");
@@ -41,7 +41,7 @@ export const QuizActions = ({
 
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Что-то пошло не так");
     } finally {
       setIsLoading(false);
     }
@@ -58,7 +58,7 @@ export const QuizActions = ({
       router.push(`/teacher/courses/${courseId}/chapters/${chapterId}`);
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Что-то пошло не так");
     } finally {
       setIsLoading(false);
     }

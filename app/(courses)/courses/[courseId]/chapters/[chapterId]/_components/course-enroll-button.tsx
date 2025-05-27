@@ -22,13 +22,13 @@ export const CourseEnrollButton = ({
       const response = await axios.post(`/api/courses/${courseId}/enroll`);
 
       if (response.status === 200) {
-        toast.success("Successfully enrolled in the course!");
+        toast.success("Успешно зачислен на курс!");
         window.location.reload();
       } else {
-        toast.error("Something went wrong");
+        toast.error("Что-то пошло не так");
       }
     } catch (error) {
-      toast.error("Something went wrong");
+      toast.error("Что-то пошло не так");
     } finally {
       setIsLoading(false);
     }

@@ -66,13 +66,13 @@ export const ChapterQuizForm = ({
       });
 
       const newQuiz = response.data;
-      toast.success("Quiz created");
+      toast.success("Quiz создан");
       toggleCreating();
 
       router.refresh(); // Refresh the page or relevant data after creation
     } catch (error) {
       console.error("Quiz creation error:", error);
-      toast.error("Something went wrong");
+      toast.error("Что-то пошло не так");
     }
   };
 
@@ -82,11 +82,11 @@ export const ChapterQuizForm = ({
       await axios.put(`/api/courses/${courseId}/chapters/${chapterId}/quizzes/reorder`, {
         list: updateData,
       });
-      toast.success("Quizzes reordered");
+      toast.success("Порядок quiz'ов изменён");
       router.refresh();
     } catch (error) {
       console.error("Quiz reorder error:", error);
-      toast.error("Something went wrong");
+      toast.error("Что-то пошло не так");
     } finally {
       setIsUpdating(false);
     }

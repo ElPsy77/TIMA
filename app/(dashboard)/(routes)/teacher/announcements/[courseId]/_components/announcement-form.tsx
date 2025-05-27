@@ -53,12 +53,12 @@ export const AnnouncementForm = ({
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
       await axios.post(`/api/courses/${courseId}/announcements`, values);
-      toast.success("Announcement Added");
+      toast.success("Объявление добавлено");
       form.reset();
       toggleEdit();
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Что-то пошло не так");
     }
   }
 

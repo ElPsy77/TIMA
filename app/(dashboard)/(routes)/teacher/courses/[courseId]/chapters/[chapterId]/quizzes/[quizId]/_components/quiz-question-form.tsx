@@ -93,7 +93,7 @@ export const QuizQuestionsForm = ({
             toggleEditing();
             router.refresh();
         } catch {
-            toast.error("Something went wrong");
+            toast.error("Что-то пошло не так");
         }
     };
 
@@ -159,7 +159,7 @@ export const QuizQuestionsForm = ({
                                                     </SelectTrigger>
                                                     <SelectContent>
                                                         <SelectGroup>
-                                                            <SelectLabel>Type</SelectLabel>
+                                                            <SelectLabel>Тип</SelectLabel>
                                                             <SelectItem value={QuestionType.NORMAL}>
                                                                 Нормальный
                                                             </SelectItem>
@@ -275,16 +275,16 @@ export const QuizQuestionsForm = ({
                                     onClick={() => remove(index)}
                                     disabled={isSubmitting}
                                 >
-                                    Remove question
+                                    Удалить вопрос
                                 </Button>
                             </div>
                         ))}
                         <div className="flex items-center gap-x-2">
                             <Button disabled={!isValid || isSubmitting} type="submit">
-                                Save
+                                Сохранить
                             </Button>
                             <Button variant="ghost" onClick={() => append({ text: "", type: QuestionType.NORMAL, option1: "", option2: "", option3: "", option4: "", answer: "" })}>
-                                Add a question
+                                Добавить вопрос
                             </Button>
                         </div>
                     </form>

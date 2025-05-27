@@ -61,7 +61,7 @@ export const ChaptersForm = ({
       toggleCreating();
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Что-то пошло не так");
     }
   }
 
@@ -72,10 +72,10 @@ export const ChaptersForm = ({
       await axios.put(`/api/courses/${courseId}/chapters/reorder`, {
         list: updateData
       });
-      toast.success("Chapters reordered");
+      toast.success("Порядок разделов изменён");
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Что-то пошло не так");
     } finally {
       setIsUpdating(false);
     }

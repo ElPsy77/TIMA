@@ -39,7 +39,7 @@ export const ChapterActions = ({
 
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Что-то пошло не так");
     } finally {
       setIsLoading(false);
     }
@@ -56,7 +56,7 @@ export const ChapterActions = ({
       router.push(`/teacher/courses/${courseId}`);
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Что-то пошло не так");
     } finally {
       setIsLoading(false);
     }
