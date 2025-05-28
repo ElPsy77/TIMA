@@ -12,38 +12,23 @@ export const Navbar = () => {
   return (
     <nav className="bg-secondary flex justify-between items-center p-4 rounded-xl w-[600px] shadow-sm">
       <div className="flex gap-x-2">
-        <Button 
+      <Button 
           asChild
           variant={pathname === "/server" ? "default" : "outline"}
-        >
-          <Link href="/server">
-            Сервер
-          </Link>
-        </Button>
-        <Button 
-          asChild
-          variant={pathname === "/client" ? "default" : "outline"}
-        >
-          <Link href="/client">
-            Клиент
-          </Link>
-        </Button>
-        <Button 
-          asChild
-          variant={pathname === "/admin" ? "default" : "outline"}
-        >
-          <Link href="/admin">
-            Админ
-          </Link>
-        </Button>
-        <Button 
-          asChild
-          variant={pathname === "/settings" ? "default" : "outline"}
         >
           <Link href="/settings">
             Настройки
           </Link>
         </Button>
+        <Button 
+          asChild
+          variant={pathname === "/" ? "default" : "outline"}
+        >
+          <Link href="/">
+            Вернуться на главную
+          </Link>
+        </Button>
+        
       </div>
       <UserButton />
     </nav>
