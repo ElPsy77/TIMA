@@ -150,14 +150,14 @@ export const CourseCard = ({
                   )}
                 >
                   <MdOutlineWatchLater className="mr-2" />
-                  {isInWatchLater ? "Remove it" : "Watch Later"}
+                  {isInWatchLater ? "Удалить" : "Смотреть позже"}
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild className="text-xs">
                   <Dialog>
                     <DialogTrigger asChild>
                       <button className="flex text-sm items-center w-full px-2 py-1 hover:bg-gray-100">
                         <IoIosShareAlt className="mr-2" />
-                        Share
+                        Поделиться
                       </button>
                     </DialogTrigger>
                     <DialogContent className=" sm:max-w-[450px] py-7 ">
