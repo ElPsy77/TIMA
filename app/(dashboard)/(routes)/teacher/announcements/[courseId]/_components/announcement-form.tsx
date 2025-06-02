@@ -65,14 +65,14 @@ export const AnnouncementForm = ({
   return (
     <div className="mt-6 border bg-slate-100 rounded-md p-4">
       <div className="font-medium flex items-center justify-between">
-        Announcement content
+        Содержание объявления
         <Button onClick={toggleEdit} variant="ghost">
           {isEditing ? (
-            <>Cancel</>
+            <>Отменить</>
           ) : (
             <>
               <Pencil className="h-4 w-4 mr-2" />
-              Start Writing
+              Начни писать
             </>
           )}
         </Button>
@@ -81,7 +81,7 @@ export const AnnouncementForm = ({
         <p className={
           "text-sm mt-2 text-slate-500 italic"
         }>
-           No content
+           Нет содержания
         </p>
       )}
       {isEditing && (
@@ -98,7 +98,7 @@ export const AnnouncementForm = ({
                   <FormControl>
                     <Textarea
                       disabled={isSubmitting}
-                      placeholder="e.g. 'This course is about...'"
+                      placeholder="Например, 'Этот курс посвящен... '"
                       {...field}
                     />
                   </FormControl>
@@ -111,7 +111,7 @@ export const AnnouncementForm = ({
                 disabled={!isValid || isSubmitting}
                 type="submit"
               >
-                Submit
+                Отправить
               </Button>
             </div>
           </form>

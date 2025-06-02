@@ -17,7 +17,7 @@ const AnnouncementList: React.FC<AnnouncementListProps> = ({
     <div className="mt-6 border bg-slate-100 rounded-md p-4">
       {initialData.announcements.length === 0 && (
             <p className="text-sm mt-2 text-slate-500 italic">
-              No announcements yet
+              Пока никаких объявлений
             </p>
           )}
           {initialData.announcements.length > 0 && (

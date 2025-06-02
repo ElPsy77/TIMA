@@ -54,7 +54,7 @@ export async function GET(req: NextRequest) {
      const othersCount = otherCategories.reduce((sum, cat) => sum + cat[1], 0);
  
      // Prepare chart data
-     const chartLabels = [...topCategories.map(cat => cat[0]), 'Others'];
+     const chartLabels = [...topCategories.map(cat => cat[0]), 'Другие'];
      const chartData = [...topCategories.map(cat => cat[1]), othersCount];
  
      return NextResponse.json({ labels: chartLabels, data: chartData }, { status: 200 });

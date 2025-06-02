@@ -35,7 +35,7 @@ export function CourseAnalytics() {
       <div className="grid gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Total Enrollments</CardTitle>
+            <CardTitle className="text-sm font-medium">Всего зачисленных</CardTitle>
             <Library className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
@@ -44,7 +44,7 @@ export function CourseAnalytics() {
         </Card>
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Total Completions</CardTitle>
+            <CardTitle className="text-sm font-medium">Всего завершенных</CardTitle>
             <Users className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
@@ -53,7 +53,7 @@ export function CourseAnalytics() {
         </Card>
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Average Quiz Score</CardTitle>
+            <CardTitle className="text-sm font-medium">Средний балл за тест</CardTitle>
             <Library className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>

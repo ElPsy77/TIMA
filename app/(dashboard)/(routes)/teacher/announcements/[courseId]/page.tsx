@@ -50,7 +50,7 @@ const CourseIdPage = async ({
             <div className="flex items-center gap-x-2">
               <IconBadge icon={LayoutDashboard} />
               <h2 className="text-xl">
-                Previous announcement
+                Предыдущее объявление
               </h2>
             </div>
             <AnnouncementList
@@ -63,7 +63,7 @@ const CourseIdPage = async ({
             <div className="flex items-center gap-x-2">
               <IconBadge icon={LayoutDashboard} />
               <h2 className="text-xl">
-                Add announcement
+                Добавить объявление
               </h2>
             </div>
             <AnnouncementForm
