@@ -4,17 +4,22 @@ import { Category } from "@prisma/client";
 
 
 import { IoHardwareChip, IoGrid } from "react-icons/io5";
+import { VscLaw } from "react-icons/vsc";
+
 
 
 import { FaVirusCovid } from "react-icons/fa6";
 import { FaPeopleArrows } from "react-icons/fa";
 import { GiDread } from "react-icons/gi";
-import { WiSmoke } from "react-icons/wi";
+import { GiEcology } from "react-icons/gi";
+
 import { GiLetterBomb } from "react-icons/gi";
 import { GiPistolGun } from "react-icons/gi";
-import { GiChemicalDrop } from "react-icons/gi";
+import { CiMedicalCross } from "react-icons/ci";
+
 import { GiGasMask } from "react-icons/gi";
-import { ImPower } from "react-icons/im";
+import { MdElectricalServices } from "react-icons/md";
+
 import { RiEarthquakeFill } from "react-icons/ri";
 import { FaFireExtinguisher } from "react-icons/fa";
 
@@ -27,18 +32,17 @@ interface CategoriesProps {
 
 const iconMap: Record<string, IconType> = {
   "Все": IoGrid,
-  "Пожар": FaFireExtinguisher,
+  "Пожарная безопасность": FaFireExtinguisher,
   "Землетрясение": RiEarthquakeFill,
-  "Авария на системах электроснабжения": ImPower,
+  "Трудовое законодательство": VscLaw,
   "Утечка газа": GiGasMask,
-  "Химическое заражение": GiChemicalDrop,
+  "Санитарные нормы и требования": CiMedicalCross ,
   "Угроза вооруженного нападения": GiPistolGun,
   "Анонимные сообщения о минировании": GiLetterBomb,
-  "Задымление в помещении": WiSmoke,
+  "Электробезопасность": MdElectricalServices,
   "Паника при ЧС": GiDread,
   "Конфликтные ситуации между обучающимися": FaPeopleArrows,
-  "Вспышка инфекционного заболевания": FaVirusCovid ,
-};
+  "Охрана окружающей среды": GiEcology,};
 
 export const Categories = ({
   items,
