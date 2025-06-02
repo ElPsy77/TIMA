@@ -134,12 +134,12 @@ export const VideoPlayer = ({
       {showQuizBlocker && (
         <div className="absolute inset-0 flex items-center justify-center bg-slate-800 flex-col gap-y-2 text-secondary">
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-            <p className="text-sm">Finish the quiz to view further</p>
+            <p className="text-sm">Завершите викторину, чтобы посмотреть дальнейшие</p>
             <button
               onClick={startQuiz}
               className="mt-4 px-4 py-2 bg-custom-primary text-white rounded-md hover:bg-custom-primary/90 transition-colors"
             >
-              Start the Quiz
+              Начать Quiz
             </button>
           </div>
         </div>
