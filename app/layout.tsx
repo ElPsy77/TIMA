@@ -14,7 +14,7 @@ const poppins = Poppins({
 
 
 export const metadata: Metadata = {
-  title: 'Education',
+  title: 'TeachSafe',
   description: 'An LMS Platform',
 }
 

@@ -37,7 +37,7 @@ export const getChapter = async ({
         isPublished: true,
       },
       include: {
-        quizzes: true, // Include quizzes related to the chapter
+        quizzes: true,
       },
     });
 
@@ -56,7 +56,7 @@ export const getChapter = async ({
         },
       });
 
-      // Fetch quiz attempts for the user
+ 
       const quizAttempts = await db.quizAttempt.findMany({
         where: {
           userId,
@@ -66,7 +66,7 @@ export const getChapter = async ({
         },
       });
 
-      // Determine the next quiz timeline that hasn't been completed
+      
       const incompleteQuizzes = chapter.quizzes.filter(
         (quiz) => !quizAttempts.some((attempt) => attempt.quizId === quiz.id)
       );
@@ -107,7 +107,7 @@ export const getChapter = async ({
       nextChapter,
       userProgress,
       purchase,
-      quizTimelineSeconds, // Include quiz timeline in the return object
+      quizTimelineSeconds, 
     };
   } catch (error) {
     console.error("Error fetching chapter details:", error);
